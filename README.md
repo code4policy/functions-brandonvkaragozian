@@ -53,7 +53,6 @@ pip install pytest                 # install the pytest package
 10. Make sure everything works correctly and issue a pull request on github back to the main branch with a message explaining what changes you made in this branch.
 
 11. Accept the pull request into the main branch and delete the `calculator` branch on github.
-
 12. Checkout the main branch, and pull the version of main with the calculator branch merged
 
 	```
@@ -67,12 +66,18 @@ pip install pytest                 # install the pytest package
 	git branch -D calculator
 	```
 
-14. Add two more functions, `square` and `cube`. both should take a single number as an argument and return the number raised to the appropriate power. 
+14. Create a new branch from `main`. In the new branch, add two more functions, `square` and `cube`. both should take a single number as an argument and return the number raised to the appropriate power. 
 15. Make a function called `square_n_times` that takes two arguments, `number` and `n`. Have the function square the number `n` times and return the sum.
+16. PR the new branch to `main`. Your `calcluator.py` in `main` should now have functions for addition, subtraction, multiplication, division, squaring, cubing, and adding squares `n` times. 
 
 ## Javascript (ungraded)
 
-1. create a new branch in your `assignments` git repo called "js-calculator"
+### Install `node`
+On WSL: `sudo apt-get install npm`
+On Mac: `brew install npm`
+
+### Tasks 
+1. create a new branch `js-calculator`
 2. inside that branch create a new file called `calculator.js`
 
 3. Write (in javascript) a program that defines four functions (multiply, add, subtract, and divide). These functions should not print anything, they should simply perform a mathematical operation on the two arguments and return the value.
