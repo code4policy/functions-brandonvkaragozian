@@ -1,5 +1,5 @@
 #multiplication function
-def multiply(a, b):
+def multiply(a,b):
     return a * b
 #addition function 
 def add(a, b):
@@ -13,23 +13,21 @@ def subtract(a, b):
 def divide(a,b):
     return a/b
 
-
 def square(a):
     return a ** 2
 
 def cube(a):
     return a ** 3
 
-input_number = int(input("Enter a number"))
-n = int(input("Enter the power to which you want to raise the number"))
-def square_n(input_number, n):
-	return input_number ** n
-
-for i in range(n):
-     result = square_n(input_number, n)
-     print(input_number, "raised to the power of", n, "is", result )
-
-
+def square_n_times(a, n): 
+    return a ** n
+    for _ in range(n):
+        result = square(result)
+    return result
+    
+print("squaring 3 over 3 times")
+n_times = square_n_times(3, 4)
+print(n_times)
 
 print("I am going to use the calculator to square 5 ")
 sq = square(5)
@@ -38,6 +36,7 @@ print(sq)
 print("I will now cube 14")
 cb = cube(14)
 print(cb)
+
 
 print("I'm going use the calculator functions to multiply 7 and 8")
 x = multiply(7,8)
@@ -54,4 +53,6 @@ print(s)
 print("I am finally going to use the calculator to divide 100 by 4")
 d = divide(100,4)
 print(d)
+
+
 
